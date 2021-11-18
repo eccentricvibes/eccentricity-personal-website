@@ -34,7 +34,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{% url 'home' %}">EveryCheese</a>
+        <a class="navbar-brand" href="{% url 'home' %}">eccentricity</a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -45,7 +45,7 @@
               <a class="nav-link" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'cheeses:list' %}">Cheeses</a>
+              <a class="nav-link" href="{% url 'cheeses:list' %}">My Projects!</a>
             </li>
             {% if request.user.is_authenticated %}
               <li class="nav-item">
@@ -81,7 +81,15 @@
       {% endif %}
 
       {% block content %}
-        <p>The Ultimate Cheese Index! This text is inherited on other pages!</p>
+        <img style="text-align:left" src = "https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt = "programmer"/>>
+        <p style="color:black;font-size:150%">Hi there! I am eccentricity, and I love coding, it is one of my favorite things to do.
+        I find coding to be very interesting, I enjoy music when I am coding, and when I am not. When I am not coding, I'm still
+        on the computer, either studying or playing video games, (depending on my mood haha). I'm a computer lover, I like to get outside whenever
+        I can, and help some people out with daily tasks in real life, or on the internet!
+        </p>
+        <p style="color:black;font-size:150%">I am very passionate about Python, I have grinded constantly for a while now to get where I am today, and you wouldn't be seeing this, if I did
+        not put in the work to make this website! You can find me on a social application called "Discord", I am not currently accepting dms or friend requests from strangers, (that may change
+        in the future, I will post updates on this website for any changes that occur on Discord and to this website!"
       {% endblock content %}
 
     </div> <!-- /container -->
